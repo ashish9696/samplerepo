@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> AI DATASET UPLOAD</title>
+<style>
+  html{
+    display: flex;
+    justify-content: left;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 15px;
+    background-image: url("{{url_for('static', filename='1.png')}}");
+    background-repeat: no-repeat;
+    background-size: cover
+  }
+
+ .buttons{
+  margin-top: 444px;
+  padding: 9px 14px;
+  border-radius: 16px;
+  color: black;
+  background-color: whitesmoke;
+  font-weight: bold;
+  font-size: 15px;    
+  margin: 0 3px;
+  cursor: pointer;
+  }
+.column {
+  position: absolute;
+  bottom: 540PX;
+  right: 30px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: right;
+    width: 180px;
+  }
+  .top-right {
+    position: absolute;
+    top: 0px;
+    right: 500px;
+  }
+  .bottom-right {
+    position: absolute;
+    bottom: 30PX;
+    right: 10px;
+  }
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .t-right {
+    position: absolute;
+    top: 120px;
+    right: 400px;
+  }
+  .p-right {
+    position: absolute;
+    top: 110px;
+    right: 960px;
+  }
+  .radio-right {
+    position: absolute;
+    top: 272px;
+    right: 1130px;
+  }
+  .b-right {
+    position: absolute;
+    bottom: 0PX;
+    right: 20px;
+  }
+ 
+
+
+  
+</style>
+</head>
+<body>
+  
+
+<div class="row">
+  <div class="column">
+    <img src="{{url_for('static', filename='RT1.png')}}" class="center-block inno-shadow" width="250" height="70">
+  </div>
+</div>
+
+<div class="t-right">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <a href="https://blogger.googleusercontent.com/img/a/AVvXsEjn-GEpuwiBa4Od21FBnTST8-z2jAgyw3rq68AYtrBosFLBgIaFnLC2NV8hwlj8xiuU4Bc5ZKNHrDPldINdgkr8Y2TmekuDp0oLKq9yYCrpooZfwpwKT9MVwQ11LGsXqBckgiPAxoWRdvxAE3RoRn4BHxVhJmnQkZT-w6DdYXEA3yP0xUSdbYDITSgOjQ=s1138" style="margin-left: auto; margin-right: auto;" target="_blank">
+            <img border="0" data-original-height="892" data-original-width="1138" height="250" src="https://blogger.googleusercontent.com/img/a/AVvXsEjn-GEpuwiBa4Od21FBnTST8-z2jAgyw3rq68AYtrBosFLBgIaFnLC2NV8hwlj8xiuU4Bc5ZKNHrDPldINdgkr8Y2TmekuDp0oLKq9yYCrpooZfwpwKT9MVwQ11LGsXqBckgiPAxoWRdvxAE3RoRn4BHxVhJmnQkZT-w6DdYXEA3yP0xUSdbYDITSgOjQ=w400-h314" width="400">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="tr-caption" style="text-align: center;color: white">Forecasting with various time-dependent inputs(Google) </td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h1 style="color: white">AI Enabled Demand Forecasting </h1> 
+<p style="color: white">Select SKU Number and Lag Weeks for the prediction </p>  
+
+<div>
+  <form action="/test" method="post" enctype="multipart/form-data"> <br><br>
+    <fieldset>
+    <label style="color:white" for="sku_number">SKU Number</label>
+    <input type="number" name="sku_number" class="buttons"/><br><br>
+    <label style="color:white" for="lag_predict">Lag Weeks </label>
+    <input type="number" name="lag_predict" class="buttons"/><br><br>
+<input type="radio" id="Univariate" name="Weighted Pound" value="Univariate">
+<label for="Univariate" style="color: white">Univariate</label>
+<input type="radio" id="Multivariate" name="Weighted Pound" value="Multivariate">
+<label for="Multivariate" style="color: white">Multivariate</label>
+<input type="submit"class="buttons"/>
+    </fieldset>
+    
+
+    </form>
+  </form>
+</div>
+
+
+<div class="bottom-right">
+  <a target="_blank" href="p2.png">
+    <img src="{{url_for('static', filename='p2.png')}}" alt="Cinque Terre" width="360" height="300">
+  </a>
+</div>
+
+  <div class="b-right">
+  <p style="color: white">Documentation<a href="https://randomtrees.com/storage/app/media/AI-Enabled-Demand-Management.pdf" style="color: white">:AI-Enabled-Demand-Management </a>.</p>
+  </div>
+  <p style="color: white">Input Data Variables </p>     
+  <iframe width="470" height="246" frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQWQS-FA-DvBCQneQp7fUA7zFHHoJ2k3625D-dAUs8mZN_EOCWl2RaEvnDFGfoOMg/pubhtml?widget=true&amp;headers=false"></iframe>
+  
+
+</html>
